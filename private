@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>隐私政策 Privacy Policy - 岛上闪念 IslandMemo</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --text: #1d1d1f;
+      --secondary: #515154;
+      --border: #e5e5ea;
+      --accent: #3b49df;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141416;
+        --text: #f5f5f7;
+        --secondary: #a1a1a6;
+        --border: #2c2c2e;
+        --accent: #6c79ff;
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    h1 { font-size: 26px; margin-bottom: 6px; }
+    h2 { font-size: 18px; margin-top: 28px; color: var(--accent); }
+    .date { color: var(--secondary); font-size: 14px; margin-bottom: 24px; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+    a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <h1>隐私政策（Privacy Policy）</h1>
+  <div class="date">生效日期 / Effective Date: 2026-11-27</div>
+
+  <h2>一、 简体中文说明</h2>
+  <p><strong>岛上闪念（IslandMemo）</strong> 高度重视您的个人隐私。本应用采用“纯本地优先”架构设计，不设独立账号系统，也不自建任何后端服务器收集您的笔记内容。</p>
+  <p><strong>1. 数据收集与存储：</strong>您在应用中记录的所有文字、标签及归档数据均默认保存在您的本地设备沙盒中。如果您已升级 Pro 并开启 iCloud 同步，数据将通过 Apple 原生 CloudKit 加密同步至您个人的 iCloud 私有数据库，开发者无法访问或查看您的任何内容。</p>
+  <p><strong>2. 系统权限使用说明：</strong></p>
+  <ul>
+    <li><strong>提醒事项权限（EventKit）：</strong>仅在您主动点击“转为提醒事项”时，用于将识别出时间的闪念写入系统“提醒事项”应用，我们不会读取或上传您原有的系统提醒列表。</li>
+    <li><strong>实时活动（灵动岛）与快捷指令：</strong>仅在本地完成剪贴板暂存与标签归档交互，不会将剪贴板内容发送至任何第三方服务器。</li>
+  </ul>
+  <p><strong>3. 第三方追踪与广告：</strong>本应用不包含任何第三方广告 SDK 或用户行为追踪分析工具。</p>
+  <p><strong>4. 联系我们：</strong>如对本隐私政策有任何疑问，请通过邮件联系：<a href="mailto:yourname@example.com">yourname@example.com</a></p>
+
+  <hr />
+
+  <h2>II. English Version</h2>
+  <p><strong>IslandMemo</strong> respects and protects your privacy. Built with a strict local-first architecture, the app requires no account registration and operates without any developer-owned backend servers.</p>
+  <p><strong>1. Data Storage & iCloud Sync:</strong> All notes, tags, and archived items are stored locally on your device. If you unlock Pro and enable iCloud Sync, your data syncs privately across your devices via Apple's native CloudKit Private Database, which is inaccessible to the developer.</p>
+  <p><strong>2. Device Permissions:</strong></p>
+  <ul>
+    <li><strong>Reminders Access (EventKit):</strong> Used solely when you explicitly convert a note with a detected date/time into an Apple Reminder. We never read or transmit your existing reminders.</li>
+    <li><strong>Live Activities & Shortcuts:</strong> Used exclusively on-device to stage clipboard text and file notes directly on the Dynamic Island.</li>
+  </ul>
+  <p><strong>3. Analytics & Ads:</strong> IslandMemo contains zero third-party advertising SDKs or tracking analytics.</p>
+  <p><strong>4. Contact:</strong> For any privacy-related questions, please contact us at <a href="mailto:yourname@example.com">gulugltop@163.com</a>.</p>
+
+</body>
+</html>
