@@ -1,71 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>隐私政策 Privacy Policy - 岛上闪念 IslandMemo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>岛上闪念隐私政策</title>
   <style>
     :root {
       color-scheme: light dark;
-      --bg: #ffffff;
-      --text: #1d1d1f;
-      --secondary: #515154;
-      --border: #e5e5ea;
-      --accent: #3b49df;
+      --background: #f2f3fa;
+      --surface: #fff;
+      --ink: #181b31;
+      --accent: #38469f;
+      --border: #d9dded;
+      --selected: #e9edff;
     }
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #141416;
-        --text: #f5f5f7;
-        --secondary: #a1a1a6;
-        --border: #2c2c2e;
-        --accent: #6c79ff;
+        --background: #131626;
+        --surface: #1e2238;
+        --ink: #edf0fc;
+        --accent: #c2c9ff;
+        --border: #404866;
+        --selected: #313b65;
       }
     }
+    *, *::before, *::after { box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 32px 20px 64px;
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font: 1rem/1.75 system-ui, -apple-system, sans-serif;
     }
-    h1 { font-size: 26px; margin-bottom: 6px; }
-    h2 { font-size: 18px; margin-top: 28px; color: var(--accent); }
-    .date { color: var(--secondary); font-size: 14px; margin-bottom: 24px; }
-    hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
-    a { color: var(--accent); text-decoration: none; }
+    .page { max-width: 49rem; margin: auto; padding: clamp(1rem, 5vw, 3rem); }
+    nav { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+    nav a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: .35rem .9rem;
+      border: 1px solid var(--border);
+      border-radius: .65rem;
+      background: var(--surface);
+      text-decoration: none;
+    }
+    nav a[aria-current="true"] { background: var(--selected); border-color: var(--accent); font-weight: 650; }
+    article {
+      scroll-margin-top: 7rem;
+      padding: clamp(1rem, 5vw, 2.25rem);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      background: var(--surface);
+      overflow-wrap: anywhere;
+    }
+    article + article { margin-top: 1rem; }
+    article[hidden] + article { margin-top: 0; }
+    h1, h2 { line-height: 1.3; }
+    h1 { margin: 0 0 1rem; font-size: clamp(1.65rem, 5vw, 2.4rem); }
+    h2 { margin: 1.65rem 0 .5rem; font-size: 1.17rem; }
+    p { margin: 0 0 .9rem; }
+    p:last-child { margin-bottom: 0; }
+    a { color: var(--accent); text-underline-offset: .2em; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
   </style>
 </head>
 <body>
+  <!-- 发布前填写中英文中的开发者名称、联络邮箱及隐私政策生效日期。 -->
+  <div class="page">
+    <nav aria-label="语言 / Language">
+      <a href="#zh" lang="zh-CN" hreflang="zh-CN">简体中文</a>
+      <a href="#en" lang="en" hreflang="en">English</a>
+    </nav>
+    <main>
+      <article id="zh" lang="zh-CN">
+        <h1>岛上闪念隐私政策</h1>
+        <p>生效日期为【YYYY 年 MM 月 DD 日】。</p>
+        <p>本政策适用于由【开发者或运营主体全称】提供的岛上闪念（IslandMemo）iOS App 及其组件。使用 App 无需创建岛上闪念账号。</p>
+        <h2>闪念与剪贴板</h2>
+        <p>你保存的文字、链接、标签、保存时间、录入方式和处理状态保存在设备上，用于在收件箱中显示、搜索、整理和导出闪念。删除闪念后，App 会清空记录中的文字、标签和录入方式，保留保存时间用于计算当日额度。</p>
+        <p>点击灵动岛的分类按钮会打开对应速存页。你在速存页或手动输入页点系统「粘贴」时，App 才接收剪贴板中的文字或链接。速记页可检查剪贴板是否有可粘贴的类型，以显示粘贴入口。iOS 可能要求你确认是否允许粘贴。你也可以直接手动输入。</p>
+        <p>开启收集模式后，系统可在灵动岛或锁屏的实时活动中显示今日保存数量及最近一条闪念的摘要。你可以在 App 内结束收集，或在系统设置中管理实时活动权限。</p>
+        <h2>iCloud 与购买</h2>
+        <p>在支持 iCloud 同步的版本中，解锁 Pro 并使用已启用 iCloud 的 Apple 账户时，App 可通过 CloudKit 私有数据库在同一账户的设备间同步闪念。你可以通过 iOS 的 iCloud 设置管理 App 对 iCloud 的使用。iCloud 服务对数据的处理遵循 Apple 的政策。 <a href="https://www.apple.com/legal/privacy/data/zh-cn/apple-account/">Apple 账户与隐私</a></p>
+        <p>Pro 购买和恢复购买由 App Store 处理。App 通过 StoreKit 验证购买结果，并在设备上保存用于识别 Pro 权益的状态。支付信息由 Apple 处理。 <a href="https://www.apple.com/legal/privacy/data/zh-cn/app-store/">App Store 与隐私</a></p>
+        <h2>提醒事项、导出与外部链接</h2>
+        <p>你选择「转提醒事项」后，App 会请求提醒事项权限，并在获得授权后将选中的内容和你确认的提醒时间写入系统提醒事项。你可以随时在 iOS 的隐私设置中撤回该权限，已创建的待办可在提醒事项内管理。</p>
+        <p>导出文件在设备上生成，由你通过系统分享菜单选择接收方。点击已保存的链接会打开相应网站或 App。分享后的副本及外部网站或 App 对数据的处理取决于接收方。</p>
+        <h2>数据管理与联系</h2>
+        <p>App 无开发者运营的闪念存储服务器、广告或追踪 SDK。你可以在收件箱或归档中删除闪念，在系统设置中管理 iCloud 与各项权限，以及自行删除已导出的文件。</p>
+        <p>如有隐私问题，或希望查询、更正或删除你曾主动发送给我们的客服信息，请联系【gulugltop@163.com】。当你通过邮件联系我们，我们会使用你的邮件地址及你提供的信息处理请求。</p>
+      </article>
+      <article id="en" lang="en">
+        <h1>IslandMemo Privacy Policy</h1>
+        <p>Effective date: [Month DD, YYYY].</p>
+        <p>This policy applies to the IslandMemo iOS app and its components, provided by [Full legal name of the developer or operator]. You can use the app without creating an IslandMemo account.</p>
+        <h2>Memos and the Clipboard</h2>
+        <p>The text, links, tags, save times, input methods, and processing status you save are stored on your device so you can view, search, organize, and export your memos from the Inbox. When you delete a memo, the app clears its text, tags, and input method. It keeps the save time to calculate your daily quota.</p>
+        <p>Selecting a category in the Dynamic Island opens the corresponding Quick Save screen. The app receives text or links from your clipboard when you tap the system Paste button on the Quick Save or manual entry screen. Quick Save may check whether the clipboard contains a supported data type to decide whether to show Paste. iOS may ask you to allow pasting. You can also enter text manually.</p>
+        <p>While Collection Mode is active, an iOS Live Activity may show today’s save count and a summary of your most recent memo in the Dynamic Island or on the Lock Screen. You can end the session in the app or manage Live Activities permissions in iOS Settings.</p>
+        <h2>iCloud and Purchases</h2>
+        <p>In versions that support iCloud sync, if you unlock Pro and use an Apple Account with iCloud enabled, the app can sync memos between devices signed in to that account using Apple’s private CloudKit database. You can manage the app’s access to iCloud in iOS Settings. Apple handles data in iCloud under its own policies. <a href="https://www.apple.com/legal/privacy/data/en/apple-account/">Apple Account &amp; Privacy</a></p>
+        <p>The App Store handles Pro purchases and restorations. The app verifies purchases with StoreKit and stores the information needed to recognize your Pro entitlement on your device. Apple handles payment information. <a href="https://www.apple.com/legal/privacy/data/en/app-store/">App Store &amp; Privacy</a></p>
+        <h2>Reminders, Exports, and External Links</h2>
+        <p>When you choose to add a memo to Reminders, the app requests access. If you grant access, it writes the selected content and the reminder time you confirm to Apple’s Reminders app. You can revoke access in iOS privacy settings and manage existing reminders in Reminders.</p>
+        <p>The app creates export files on your device. You choose where to send them using the system share sheet. Opening a saved link takes you to the corresponding website or app. Recipients determine how they handle shared copies, and each external website or app handles data according to its own practices.</p>
+        <h2>Managing Your Data and Contacting Us</h2>
+        <p>The app has no developer-operated memo storage servers, ads, or tracking SDKs. You can delete memos from the Inbox or Archive, manage iCloud and app permissions in iOS Settings, and delete exported files yourself.</p>
+        <p>For privacy questions, or to request access to, correction of, or deletion of information you previously sent to support, email [gulugltop@163.com]. When you contact us by email, we use your email address and the information you provide to handle your request.</p>
+      </article>
+    </main>
+  </div>
+  <script>
+    const languageLinks = document.querySelectorAll('nav a');
+    const documents = document.querySelectorAll('main article');
 
-  <h1>隐私政策（Privacy Policy）</h1>
-  <div class="date">生效日期 / Effective Date: 2026-11-27</div>
+    function updateLanguage() {
+      const language = location.hash === '#en' ? 'en' : 'zh';
+      for (const article of documents) {
+        article.hidden = article.id !== language;
+        if (!article.hidden) {
+          document.documentElement.lang = article.lang;
+          document.title = article.querySelector('h1').textContent;
+        }
+      }
+      for (const link of languageLinks) {
+        if (link.hash === '#' + language) {
+          link.setAttribute('aria-current', 'true');
+        } else {
+          link.removeAttribute('aria-current');
+        }
+      }
+    }
 
-  <h2>一、 简体中文说明</h2>
-  <p><strong>岛上闪念（IslandMemo）</strong> 高度重视您的个人隐私。本应用采用“纯本地优先”架构设计，不设独立账号系统，也不自建任何后端服务器收集您的笔记内容。</p>
-  <p><strong>1. 数据收集与存储：</strong>您在应用中记录的所有文字、标签及归档数据均默认保存在您的本地设备沙盒中。如果您已升级 Pro 并开启 iCloud 同步，数据将通过 Apple 原生 CloudKit 加密同步至您个人的 iCloud 私有数据库，开发者无法访问或查看您的任何内容。</p>
-  <p><strong>2. 系统权限使用说明：</strong></p>
-  <ul>
-    <li><strong>提醒事项权限（EventKit）：</strong>仅在您主动点击“转为提醒事项”时，用于将识别出时间的闪念写入系统“提醒事项”应用，我们不会读取或上传您原有的系统提醒列表。</li>
-    <li><strong>实时活动（灵动岛）与快捷指令：</strong>仅在本地完成剪贴板暂存与标签归档交互，不会将剪贴板内容发送至任何第三方服务器。</li>
-  </ul>
-  <p><strong>3. 第三方追踪与广告：</strong>本应用不包含任何第三方广告 SDK 或用户行为追踪分析工具。</p>
-  <p><strong>4. 联系我们：</strong>如对本隐私政策有任何疑问，请通过邮件联系：<a href="mailto:yourname@example.com">yourname@example.com</a></p>
-
-  <hr />
-
-  <h2>II. English Version</h2>
-  <p><strong>IslandMemo</strong> respects and protects your privacy. Built with a strict local-first architecture, the app requires no account registration and operates without any developer-owned backend servers.</p>
-  <p><strong>1. Data Storage & iCloud Sync:</strong> All notes, tags, and archived items are stored locally on your device. If you unlock Pro and enable iCloud Sync, your data syncs privately across your devices via Apple's native CloudKit Private Database, which is inaccessible to the developer.</p>
-  <p><strong>2. Device Permissions:</strong></p>
-  <ul>
-    <li><strong>Reminders Access (EventKit):</strong> Used solely when you explicitly convert a note with a detected date/time into an Apple Reminder. We never read or transmit your existing reminders.</li>
-    <li><strong>Live Activities & Shortcuts:</strong> Used exclusively on-device to stage clipboard text and file notes directly on the Dynamic Island.</li>
-  </ul>
-  <p><strong>3. Analytics & Ads:</strong> IslandMemo contains zero third-party advertising SDKs or tracking analytics.</p>
-  <p><strong>4. Contact:</strong> For any privacy-related questions, please contact us at <a href="mailto:yourname@example.com">gulugltop@163.com</a>.</p>
-
+    window.addEventListener('hashchange', updateLanguage);
+    updateLanguage();
+  </script>
 </body>
 </html>
