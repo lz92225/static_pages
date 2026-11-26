@@ -1,1 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>岛上闪念技术支持</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f2f3fa;
+      --surface: #fff;
+      --ink: #181b31;
+      --accent: #38469f;
+      --border: #d9dded;
+      --selected: #e9edff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #131626;
+        --surface: #1e2238;
+        --ink: #edf0fc;
+        --accent: #c2c9ff;
+        --border: #404866;
+        --selected: #313b65;
+      }
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font: 1rem/1.75 system-ui, -apple-system, sans-serif;
+    }
+    .page { max-width: 49rem; margin: auto; padding: clamp(1rem, 5vw, 3rem); }
+    nav { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+    nav a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: .35rem .9rem;
+      border: 1px solid var(--border);
+      border-radius: .65rem;
+      background: var(--surface);
+      text-decoration: none;
+    }
+    nav a[aria-current="true"] { background: var(--selected); border-color: var(--accent); font-weight: 650; }
+    article {
+      scroll-margin-top: 7rem;
+      padding: clamp(1rem, 5vw, 2.25rem);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      background: var(--surface);
+      overflow-wrap: anywhere;
+    }
+    article + article { margin-top: 1rem; }
+    article[hidden] + article { margin-top: 0; }
+    h1, h2 { line-height: 1.3; }
+    h1 { margin: 0 0 1rem; font-size: clamp(1.65rem, 5vw, 2.4rem); }
+    h2 { margin: 1.65rem 0 .5rem; font-size: 1.17rem; }
+    p { margin: 0 0 .9rem; }
+    p:last-child { margin-bottom: 0; }
+    a { color: var(--accent); text-underline-offset: .2em; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <!-- 发布前填写中英文中的开发者名称、联络邮箱及隐私政策生效日期。 -->
+  <div class="page">
+    <nav aria-label="语言 / Language">
+      <a href="#zh" lang="zh-CN" hreflang="zh-CN">简体中文</a>
+      <a href="#en" lang="en" hreflang="en">English</a>
+    </nav>
+    <main>
+      <article id="zh" lang="zh-CN">
+        <h1>岛上闪念技术支持</h1>
+        <p>岛上闪念（IslandMemo）是一款适用于 iOS 17 或更高版本的 iPhone 速记工具。灵动岛操作需要支持灵动岛的 iPhone，控制中心快捷入口需要 iOS 18 或更高版本。</p>
+        <h2>收集剪贴板</h2>
+        <p>在「收件箱」点「开启收集」。切换到其他 App，复制一段文字或链接，长按灵动岛并选择分类。App 会打开该分类的速存页，点系统「粘贴」即可保存。灵动岛会更新摘要和今日条数。收集模式每次最长八小时，可以回到收件箱续期。</p>
+        <p>「粘贴」不可用时，请先复制文字或链接。收集模式未出现时，请检查 iPhone 是否支持灵动岛，以及系统设置是否允许本 App 使用实时活动。</p>
+        <h2>手动速记和整理</h2>
+        <p>在收件箱点右上角的新建按钮，输入内容、选择分类并保存。配备相应系统版本时，可以从控制中心添加「闪念速记」或「闪念收集」。Pro 用户可以添加主屏幕或锁屏速记组件。</p>
+        <p>在收件箱搜索文字或标签。向右滑动一条记录可标记处理状态，向左滑动可归档或删除。「转提醒事项」会把选中的内容保存到系统提醒事项，需要授权访问并设置默认列表。卡片显示已识别的时间，有时间的闪念保存后可点「修改时间」。没有明确时间时，选一个快捷时间或「不设时间」。</p>
+        <h2>Pro、iCloud 与导出</h2>
+        <p>已购买 Pro 却未解锁时，请使用购买时的 Apple 账户，在收件箱右上角的「更多」菜单打开「岛上闪念 Pro」，点击「恢复购买」。首次解锁后可以重新打开 App。在支持同步的版本中，请确认各设备登录同一 iCloud 账户，并允许岛上闪念使用 iCloud。</p>
+        <p>Pro 用户可在「更多」→「导出」选择今日或本周、选择格式并生成文件，然后使用系统分享菜单将文件保存到所选位置，或发送给指定应用。</p>
+        <h2>联系开发者</h2>
+        <p>开发者为【开发者或运营主体全称】。如需帮助，请发送邮件至【gulugltop@163.com】，并注明 App 版本、iPhone 型号、iOS 版本及出现问题的操作步骤。若附上截图，请先遮盖闪念正文、账户信息和其他敏感内容。</p>
+      </article>
+      <article id="en" lang="en">
+        <h1>IslandMemo Support</h1>
+        <p>IslandMemo is a quick note-taking app for iPhone running iOS 17 or later. Dynamic Island controls require an iPhone with the Dynamic Island. Control Center shortcuts require iOS 18 or later.</p>
+        <h2>Capture from the Clipboard</h2>
+        <p>In the Inbox, tap Start Collection (开启收集). Switch to another app and copy some text or a link. Touch and hold the Dynamic Island, then select a category. On the Quick Save screen, tap the system Paste button to save. The Dynamic Island updates the preview and today’s save count. Each collection session lasts up to eight hours. You can renew it from the Inbox.</p>
+        <p>If Paste is unavailable, first copy some text or a link. If Collection Mode does not appear, check that your iPhone has the Dynamic Island and that Live Activities are enabled for IslandMemo in Settings.</p>
+        <h2>Capture and Organize Memos</h2>
+        <p>Tap the New button in the upper-right corner of the Inbox, enter your memo, select a category, and save. On supported iOS versions, you can add the Quick Capture (闪念速记) or Memo Collection (闪念收集) control to Control Center. Pro users can add Quick Capture widgets to the Home Screen or Lock Screen.</p>
+        <p>Search for text or tags in the Inbox. Swipe right on a memo to change its processing status, or swipe left to archive or delete it. Choose Add to Reminders (转提醒事项) to save the selected content in Reminders. Grant access and set a default list first. The memo card shows any detected time. For a saved memo with a time, tap Change Time (修改时间). If there is no clear time, choose a time shortcut or No Time (不设时间).</p>
+        <h2>Pro, iCloud, and Export</h2>
+        <p>If you purchased Pro and it is still locked, use the Apple Account you purchased with. In the Inbox, open the More (更多) menu in the upper-right corner, choose IslandMemo Pro (岛上闪念 Pro), then tap Restore Purchases (恢复购买). You can reopen the app after first unlocking Pro. In versions with sync support, check that all devices use the same iCloud account and that iCloud is enabled for IslandMemo.</p>
+        <p>Pro users can open More → Export (导出), select Today or This Week, choose a format, and generate a file. Use the system share sheet to save the file where you want it or send it to another app.</p>
+        <h2>Contact the Developer</h2>
+        <p>Developer: [Full legal name of the developer or operator]. For help, email [gulugltop@163.com] with the app version, iPhone model, iOS version, and steps to reproduce the issue. If you attach screenshots, cover any memo text, account information, and other sensitive details.</p>
+      </article>
+    </main>
+  </div>
+  <script>
+    const languageLinks = document.querySelectorAll('nav a');
+    const documents = document.querySelectorAll('main article');
 
+    function updateLanguage() {
+      const language = location.hash === '#en' ? 'en' : 'zh';
+      for (const article of documents) {
+        article.hidden = article.id !== language;
+        if (!article.hidden) {
+          document.documentElement.lang = article.lang;
+          document.title = article.querySelector('h1').textContent;
+        }
+      }
+      for (const link of languageLinks) {
+        if (link.hash === '#' + language) {
+          link.setAttribute('aria-current', 'true');
+        } else {
+          link.removeAttribute('aria-current');
+        }
+      }
+    }
+
+    window.addEventListener('hashchange', updateLanguage);
+    updateLanguage();
+  </script>
+</body>
+</html>
